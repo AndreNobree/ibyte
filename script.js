@@ -27,7 +27,7 @@ btn.addEventListener("click", function(e){
         if (value.length == 8){
 
             //tirar o EM
-            var insere = value.split("").filter(n => (Number(n) || n == 0)).join("");
+            var insere = value.split("").filter(n => (Number(n) || n == 0)).join("").trim();
             console.log(insere)
             if (insere.length == 6){
                 var mostra = window.document.getElementById('mostra');
@@ -51,7 +51,7 @@ btn.addEventListener("click", function(e){
         else if (value.length == 6){
 
 
-            var insere2 = value.split("").filter(n => (Number(n) || n == 0)).join("");
+            var insere2 = value.split("").filter(n => (Number(n) || n == 0)).join("").trim();
             console.log(insere2)
 
             if (insere2.length == 6){
@@ -83,10 +83,3 @@ btn.addEventListener("click", function(e){
     }
 });
 
-
-
-if (toastTrigger) {
-  toastTrigger.addEventListener('click', () => {
-    
-  })
-}
