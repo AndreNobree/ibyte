@@ -2,10 +2,6 @@
     margin: 0;
     padding: 0;
 }
-body{
-    background-color: #F5F5F5;
-    
-}
 .logo{
     padding: 30px;
     background-color: #F9F9F9;
@@ -13,12 +9,14 @@ body{
     text-align: center;
     box-shadow: 0px 0px 10px black;
 }
+#body{
+    background-color: #DCDCDC;
+}
 .divInput{
     width: 78vw;
     display: flex;
     justify-content: center;
     margin: auto;
-    margin-top: 150px;
 }
 .box input[type = "text"]{
     margin-top: 3px;
@@ -28,9 +26,11 @@ body{
 	border: 2px solid #c21a15;
     border-radius: 8px;
     outline: none;
+    transition: 0.2s;
 }
 .titulo{
     font-size: 1.8vw;
+    margin-top: 20px;
 }
 .box input[type = "submit"]{
     margin-top: 15px;
@@ -45,17 +45,22 @@ body{
 .box input[type = "text"]:focus{
     border: 2px solid #3498db;
 }
-.link{
-    background-color: #55aee9;
+#liveToast{
+    background-color: #d84b47;
+    color: #fff;
+}
+.card{
     width: 74vw;
-    padding: 25px;
-    justify-content: center;
     margin: auto;
     margin-top: 15px;
-    font-size: 1.37vw;
-    border-radius: 10px;
+   
 }
-#liveToast{
-    background-color: #c72a25;
-    color: #fff;
+
+.conteudo{
+    background-color: #fff;
+    width: 80vw;
+    height: 380px;
+    margin: auto;
+    border-radius: 15px;
+    margin-top: 80px;
 }
